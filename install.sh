@@ -8,6 +8,10 @@ cd .. && rm -rf fonts
 
 # oh-my-zsh & plugins
 # https://github.com/ohmyzsh/ohmyzsh
+if ! command -v zsh &> /dev/null; then
+  echo "Zsh not found. Please install zsh first."
+  exit 1
+fi
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O - | zsh || true
 
 # Install useful zsh plugins
