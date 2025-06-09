@@ -35,6 +35,14 @@ When you open a project in a Dev Container, VS Code will:
 
 This ensures a consistent shell experience across all your Dev Containers.
 
+## Prerequisite
+
+Make sure Zsh is installed in your Dev Container. You can add the following to your Dockerfile:
+
+```dockerfile
+RUN apt-get update && apt-get install -y zsh
+```
+
 ## Customization
 
 - **Aliases**: Modify Git aliases in the `~/.zshrc` file as per your workflow.
