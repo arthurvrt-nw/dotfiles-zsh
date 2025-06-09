@@ -27,6 +27,8 @@ This repository can be used to personalize your Dev Containers with Zsh configur
    }
    ```
 
+![dotfile-config](./assets/dotfile-config.png)
+
 When you open a project in a Dev Container, VS Code will:
 
 1. Clone this repository into `~/.dotfiles` (or specified target directory)
